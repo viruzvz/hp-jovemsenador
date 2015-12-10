@@ -1,0 +1,43 @@
+.container(style="border:1px solid red")
+  .row
+    .col-md-9
+      #carousel-example-generic.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#carousel-example-generic', data-slide-to='0')
+          li(data-target='#carousel-example-generic', data-slide-to='1')
+          li(data-target='#carousel-example-generic', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            img(src='...', alt='...')
+            .carousel-caption
+              | ...
+          .item
+            img(src='...', alt='...')
+            .carousel-caption
+              | ...
+          |     ...
+        // Controls
+        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
+    .col-md-3
+      // Nav tabs
+      ul.nav.nav-tabs(role='tablist')
+        li.active(role='presentation')
+          a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Home
+        li(role='presentation')
+          a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
+        li(role='presentation')
+          a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Messages
+
+      // Tab panes
+      .tab-content
+        #home.tab-pane.active(role='tabpanel') ...
+        #profile.tab-pane(role='tabpanel') ...
+        #messages.tab-pane(role='tabpanel') ...
+

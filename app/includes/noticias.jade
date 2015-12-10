@@ -1,0 +1,115 @@
+.container.u-spacer--xxl
+  .row
+    .col-md-9
+      include carousel
+      .row.mainflex-sm
+        .col-md-4
+
+          .box-colors(class="+border-jovem-secondary")
+            .box-colors--header(class="+border-jovem-secondary") 
+              span(class="+background-jovem-secondary") Vencedores 2015
+              a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+                strong +
+            ul.list-unstyled
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-education
+                  |  Gama - DF
+                  span.pull-right 1º
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-education
+                  |  Gama - DF
+                  span.pull-right 2º
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-education
+                  |  Gama - DF
+                  span.pull-right 3º
+
+        .col-md-4
+          .box-colors(class="+border-jovem-primary")
+            .box-colors--header(class="+border-jovem-primary") 
+              span(class="+background-jovem-primary") Regulamento 2015
+              a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+                strong +
+            ul.list-unstyled
+              li
+                a(href="#") 
+                  img.img-responsive(src="img/banner-jovemsenador.png" alt="banner jovem senador 2015")
+        .col-md-4
+          .box-colors(class="+border-jovem-default")
+            .box-colors--header(class="+border-jovem-default") 
+              span(class="+background-jovem-default") Inscrição
+              a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+                strong +
+            ul.list-unstyled
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-search 
+                  |  Posso participar?
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-search 
+                  |  Ficha de inscrição 2015
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-search 
+                  |  Folha de redação 2015
+              li
+                a(href="#") 
+                  span.glyphicon.glyphicon-search 
+                  |  Para onde enviar minha redação?
+
+    .col-md-3
+      ul.nav.nav-tabs.nav-tabs--jovem(role='tablist')
+        li.active(role='presentation')
+          a(href='#destaques', aria-controls='destaques', role='tab', data-toggle='tab') Destaque
+        li(role='presentation')
+          a(href='#depoimentos', aria-controls='depoimentos', role='tab', data-toggle='tab') Depoimentos
+      // Tab panes
+      .tab-content.tab-content--jovem(class="+background-primary--light")
+        #destaques.tab-pane.active(role='tabpanel') 
+          .Segments.Box.Box--sm.u-spacer--xl
+            .CutHere
+              .Segment
+                p 
+                  small
+                    | 03/12/2015 16:15
+                a(href="#")
+                  | Programa Jovem Senador tem seu primeiro representante indígena
+              .Segment
+                p 
+                  small
+                    | 03/12/2015 16:15
+                a(href="#")
+                  | Aluna de escola estadual de Combinado vence concurso Jovem Senador 2015
+              .Segment
+                p 
+                  small
+                    | 03/12/2015 16:15
+                a(href="#")
+                  | Jovem de Passos vence concurso nacional com redação sobre política
+              .Segment
+                p 
+                  small
+                    | 03/12/2015 16:15
+                a(href="#")
+                  | Aluna de escola estadual de Combinado vence concurso Jovem Senador 2015
+              .Segment
+                p 
+                  small
+                    | 03/12/2015 16:15
+                a(href="#")
+                  | Jovem de Passos vence concurso nacional com redação sobre política
+              .Segment
+                p 
+                  small
+                    | 03/12/2015 16:15
+                a(href="#")
+                  | Jovem de Passos vence concurso nacional com redação sobre política
+              .Segment.text-right
+                .small: b: a(href="#") Veja mais ›
+        #depoimentos.tab-pane(role='tabpanel') ...
+
+
