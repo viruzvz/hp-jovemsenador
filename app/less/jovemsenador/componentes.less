@@ -1,0 +1,81 @@
+/////////////////// componentes
+.componentes {
+  border-bottom: 5px solid @color-jovem-light;
+}
+.calendario {
+  background-color: @color-jovem-light;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: @color-jovem-default;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color:#ccc;
+  }
+  height: 203px;
+  padding: 10px;
+  > ul > li {
+    margin-bottom: 10px;
+    > a:hover {
+      text-decoration: none;
+      color: @color-jovem-primary;
+    }
+  }
+}
+.calendario-liststyle {
+  background-color: #00b9e9;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #333;
+}
+/////////////////// mapa brasil
+.mapa-content {
+  position: relative;
+}
+.mapa-brasil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:240px; 
+  height:240px; 
+}
+.mapa-svg--colors {
+  &:hover {
+    fill:@color-jovem-primary;
+  }
+}
+.mapa-svg {
+  cursor: pointer;
+}
+///////////////////// media queries
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+  .mapa-brasil {
+    position: inherit;
+    float: right;
+    width: 390px;
+    height: 390px;
+  }
+}
+@media (min-width: 361px) and (max-width:768px) {
+  .mapa-brasil {
+    position: inherit;
+    float: right;
+    width: 390px;
+    height: 390px;
+  }
+}
+@media (max-width: 360px) {
+  .mapa-brasil {
+    position: inherit;
+    float: right;
+    margin-right: -20px;
+    width: 320px;
+    height: 320px;
+  }
+}
