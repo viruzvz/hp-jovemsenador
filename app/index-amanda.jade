@@ -1,43 +1,28 @@
-.container(style="border:1px solid red")
-  .row
-    .col-md-9
-      #carousel-example-generic.carousel.slide(data-ride='carousel')
-        // Indicators
-        ol.carousel-indicators
-          li.active(data-target='#carousel-example-generic', data-slide-to='0')
-          li(data-target='#carousel-example-generic', data-slide-to='1')
-          li(data-target='#carousel-example-generic', data-slide-to='2')
-        // Wrapper for slides
-        .carousel-inner(role='listbox')
-          .item.active
-            img(src='...', alt='...')
-            .carousel-caption
-              | ...
-          .item
-            img(src='...', alt='...')
-            .carousel-caption
-              | ...
-          |     ...
-        // Controls
-        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
-          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-          span.sr-only Previous
-        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
-          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-          span.sr-only Next
-    .col-md-3
-      // Nav tabs
-      ul.nav.nav-tabs(role='tablist')
-        li.active(role='presentation')
-          a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Home
-        li(role='presentation')
-          a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
-        li(role='presentation')
-          a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Messages
+doctype html
+html(lang='pt')
 
-      // Tab panes
-      .tab-content
-        #home.tab-pane.active(role='tabpanel') ...
-        #profile.tab-pane(role='tabpanel') ...
-        #messages.tab-pane(role='tabpanel') ...
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no')
+    link(href='styles/main.css', rel='stylesheet')
+    
+    link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css')
 
+
+  body#sfcss
+    include ../node_modules/design.shell/app/jade/navglobal
+    block topo
+      include includes/topo
+      include includes/perfil
+      include includes/brands
+      include includes/footer
+
+    script(src='jquery/dist/jquery.min.js')
+    script(src='bootstrap/dist/js/bootstrap.min.js')
+    
+    script(src='scripts/main.js')
+    
+
+    script(src='//localhost:35729/livereload.js')
