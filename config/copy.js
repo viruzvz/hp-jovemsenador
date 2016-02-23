@@ -31,5 +31,11 @@ module.exports = {
       dest: '<%= config.dist %>',
       filter: 'isFile'
     }]
+  },
+  images:{
+    files: [{
+      src:'app/img',
+      dest:'dist'
+    }]
   }
 }
