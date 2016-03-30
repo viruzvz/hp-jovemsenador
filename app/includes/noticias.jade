@@ -2,75 +2,13 @@
   .row
     .col-md-9
       include carousel
-      .row.mainflex-sm
-        .col-md-4.u-spacer--xxl
-
-          .box-colors(class="+border-jovem-secondary")
-            .box-colors--header.zeta(class="+border-jovem-secondary") 
-              span(class="+background-jovem-secondary") Vencedores 2015
-              a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
-                strong +
-            ul.list-unstyled
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-education
-                  |  Gama - DF
-                  span.pull-right 1º
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-education
-                  |  Gama - DF
-                  span.pull-right 2º
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-education
-                  |  Gama - DF
-                  span.pull-right 3º
-
-        .col-md-4.u-spacer--xxl
-          .box-colors(class="+border-jovem-primary")
-            .box-colors--header.zeta(class="+border-jovem-primary") 
-              span(class="+background-jovem-primary") Regulamento 2015
-              a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
-                strong +
-            ul.list-unstyled
-              li
-                a(href="#") 
-                  img.img-responsive(src="img/banner-jovemsenador.png" alt="banner jovem senador 2015")
-        .col-md-4.u-spacer--xxl
-          .box-colors(class="+border-jovem-default")
-            .box-colors--header.zeta(class="+border-jovem-default") 
-              span(class="+background-jovem-default") Inscrição
-              a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
-                strong +
-            ul.list-unstyled
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-search 
-                  |  Posso participar?
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-search 
-                  |  Ficha de inscrição 2015
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-search 
-                  |  Folha de redação 2015
-              li
-                a(href="#") 
-                  span.glyphicon.glyphicon-search 
-                  |  Para onde enviar minha redação?
-
     .col-md-3.u-spacer--xxl
-      ul.nav.nav-tabs.nav-tabs--jovem(role='tablist')
-        li.active(role='presentation')
-          a(href='#destaques', aria-controls='destaques', role='tab', data-toggle='tab') Destaque
-        li(role='presentation')
-          a(href='#depoimentos', aria-controls='depoimentos', role='tab', data-toggle='tab') Depoimentos
-      // Tab panes
-      .tab-content.tab-content--jovem(class="+background-primary--light")
-        #destaques.tab-pane.active(role='tabpanel') 
-          .Segments.Box.Box--sm.u-spacer--xl
+      .Segment.Box.Box--sm(class="+background-primary--light")
+        span.epsilon.u-divisorVertical.u-alignMiddle
+          | Destaques
+      .tab-content--jovem(class="+background-primary--light")
+        .nano
+          .nano-content.Box.Box--sm.u-spacer--xl
             .CutHere
               .Segment
                 p 
@@ -110,6 +48,88 @@
                   | Jovem de Passos vence concurso nacional com redação sobre política
               .Segment.text-right
                 .small: b: a(href="#") Veja mais ›
-        #depoimentos.tab-pane(role='tabpanel') ...
 
 
+  .row.mainflex-sm
+    .col-md-3.u-spacer--xxl
+
+      .box-colors(class="+border-jovem-secondary")
+        .box-colors--header.zeta(class="+border-jovem-secondary") 
+          span(class="+background-jovem-secondary") Vencedores 2015
+          a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+            strong +
+        ul.list-unstyled
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-education
+              |  Gama - DF
+              span.pull-right 1º
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-education
+              |  Gama - DF
+              span.pull-right 2º
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-education
+              |  Gama - DF
+              span.pull-right 3º
+
+    .col-md-3.u-spacer--xxl
+      .box-colors(class="+border-jovem-primary")
+        .box-colors--header.zeta(class="+border-jovem-primary") 
+          span(class="+background-jovem-primary") Regulamento 2015
+          a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+            strong +
+        ul.list-unstyled
+          li
+            a(href="#") 
+              img.img-responsive(src="img/banner-jovemsenador.png" alt="banner jovem senador 2015")
+
+    .col-md-3.u-spacer--xxl
+      .box-colors(class="+border-jovem-default")
+        .box-colors--header.zeta(class="+border-jovem-default") 
+          span(class="+background-jovem-default") Inscrição
+          a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+            strong +
+        ul.list-unstyled
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-search 
+              |  Posso participar?
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-search 
+              |  Ficha de inscrição 2015
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-search 
+              |  Folha de redação 2015
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-search 
+              |  Para onde enviar minha redação?
+
+    .col-md-3.u-spacer--xxl
+      .box-colors(class="+border-jovem-danger") 
+        .box-colors--header.zeta(class="+border-jovem-danger") 
+          span(class="+background-jovem-danger") Depoimentos
+          a(href="#" data-toggle="tooltip" data-placement="top" title="Veja mais").pull-right
+            strong +
+        ul.list-unstyled
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-user
+              |  Foi muito bom participar do Jovem...
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-user
+              |  O Projeto mudou nosso conceito...
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-user
+              |  Nossa redação foi baseada...
+          li
+            a(href="#") 
+              span.glyphicon.glyphicon-user
+              |  Obrigado todo o Senado Federal...

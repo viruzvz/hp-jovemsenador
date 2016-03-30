@@ -4,27 +4,22 @@
 }
 .calendario {
   background-color: @color-jovem-light;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      background-color: @color-jovem-default;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color:#ccc;
-  }
   height: 203px;
   padding: 10px;
-  > ul > li {
+  ul li {
     margin-bottom: 10px;
-    > a:hover {
-      text-decoration: none;
-      color: @color-jovem-primary;
+    a {
+      &:hover {
+        text-decoration: none;
+        color: @color-jovem-primary;
+        .calendario-liststyle {
+          background-color: orange !important;
+        }
+      }
     }
   }
 }
+
 .calendario-liststyle {
   background-color: #00b9e9;
   border: 1px solid #fff;

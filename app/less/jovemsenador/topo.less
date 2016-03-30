@@ -66,6 +66,7 @@
         line-height: 67px;
         padding-top: 0;
         padding-bottom: 0;
+        transition: all 0.3s ease;
         &:hover, &:focus{
           background-color: @color-jovem-primary--light;
           color:#000;
@@ -73,11 +74,22 @@
         }
       }
   }
+.dropdown .dropdown-menu {
+    transition: all 0.3s;
+    opacity: 0;
+}
+  .dropdown.open .dropdown-menu {
+      opacity: 1;
+}
   .dropdown-menu {
     background-color: @color-jovem-secondary;
     border-bottom: 5px solid @color-jovem-primary;
+    li {
+      border-bottom: 1px dotted #999;
+    }
     li > a {
       color:#fff;
+      transition: all 0.3s ease;
       &:hover{
         color:@color-jovem-primary;
         background-color: @color-jovem-secondary--light;

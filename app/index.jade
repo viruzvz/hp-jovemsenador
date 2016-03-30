@@ -15,7 +15,6 @@ html(lang='pt')
     include ../node_modules/design.shell/app/jade/navglobal
     block topo
       include includes/topo
-
       include includes/noticias
       include includes/depoimento
       include includes/componentes
@@ -23,10 +22,10 @@ html(lang='pt')
       include includes/brands
       include includes/footer
 
-    script(src='jquery/dist/jquery.min.js')
-    script(src='bootstrap/dist/js/bootstrap.min.js')
-    
-    script(src='scripts/main.js')
-    
 
+    script(src='jquery/dist/jquery.min.js')
+    script(src='bootstrap/dist/js/bootstrap.min.js')    
     script(src='//localhost:35729/livereload.js')
+    script(src='scripts/pgwslideshow.js') 
+    script(src='scripts/jquery.nanoscroller.min.js') 
+    script(src='scripts/main.js')

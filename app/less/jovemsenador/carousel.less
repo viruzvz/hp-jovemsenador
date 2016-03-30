@@ -1,29 +1,30 @@
 /////////////////// carousel
-
-#carousel-jovemsenador--primary {
-  .carousel-control {
-    .glyphicon-chevron-left, .glyphicon-chevron-right, .icon-prev, .icon-next {
-      font-size: 22px;
-    }
+.carousel-jovem {
+  ul {
+    padding-left: 0;
   }
-  .carousel-indicators {
-      left: inherit;
-      margin-left: inherit;
-      width: 100%;
-      bottom: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      li {
-        width: 140px;
-        height: 100%;
-        border:none;
-      } 
-      .active {
-        border:1px solid #fff;
-        border-radius: 0px;
-      }
+}
+.ps-nextIcon, .ps-prevIcon {
+    border-color: transparent !important;
+    border-style: inherit !important;
+    border-width: inherit !important;
+    position: relative;
+    top: 1px;
+    display: inline-block !important;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    &:after {
+      content:"\e080";
+      font-size: 20px;
+    }
+}
+.ps-prevIcon {
+  &:after {
+    content: "\e079";
   }
 }
 

@@ -1,52 +1,14 @@
-#carousel-jovemsenador--primary.carousel.slide.u-spacer--xxl(data-ride='carousel')
-  // Indicators
+.carousel-jovem.u-spacer--xxl
+  ul.pgwSlideshow
+    li
+      img(src='img/slide.jpg', alt='Nome da foto 1') 
+    li
+      img(src='img/slide2.jpg', alt='Nome da foto 2')
+    li
+      img(src='img/slide3.jpg', alt='Nome da foto 3')
+    li
+      img(src='img/slide4.jpg', alt='Nome da foto 4')
+    li
+      a(href='http://en.wikipedia.org/wiki/Monaco', target='_blank')
+      img(src='img/slide.jpg', alt='Nome da foto 12')
 
-  ol.carousel-indicators
-    li.active(data-target='#carousel-jovemsenador--primary', data-slide-to='0')
-      img.hidden-xs.img-responsive(src='img/slide.jpg', alt='...')
-    li(data-target='#carousel-jovemsenador--primary', data-slide-to='1')
-      img.hidden-xs.img-responsive(src='img/slide2.jpg', alt='...')
-    li(data-target='#carousel-jovemsenador--primary', data-slide-to='2')
-      img.hidden-xs.img-responsive(src='img/slide3.jpg', alt='...')
-    li(data-target='#carousel-jovemsenador--primary', data-slide-to='3')
-      img.hidden-xs.img-responsive(src='img/slide4.jpg', alt='...')
-    // Controls
-    a.left.carousel-control(href='#carousel-jovemsenador--primary', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-      span.sr-only Previous
-    a.right.carousel-control(href='#carousel-jovemsenador--primary', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-      span.sr-only Next
-  // Wrapper for slides
-  .carousel-inner(role='listbox')
-    .item.active
-      img.img-responsive(src='img/slide.jpg', alt='...')
-    .item
-      img.img-responsive(src='img/slide2.jpg', alt='...')
-    .item
-      img.img-responsive(src='img/slide3.jpg', alt='...')
-    .item
-      img.img-responsive(src='img/slide4.jpg', alt='...')
-        
-  // VISIVEL APENAS PARA XS
-#carousel-jovemsenador--xs.carousel.slide.visible-xs.u-spacer--xxl(data-ride='carousel')
-    // Indicators
-    ol.carousel-indicators
-      li.active(data-target='#carousel-jovemsenador--xs', data-slide-to='0')
-      li(data-target='#carousel-jovemsenador--xs', data-slide-to='1')
-      li(data-target='#carousel-jovemsenador--xs', data-slide-to='2')
-    // Wrapper for slides
-    .carousel-inner(role='listbox')
-      .item.active
-        img.img-responsive(src='img/slide.jpg', alt='...')
-      .item
-        img.img-responsive(src='img/slide2.jpg', alt='...')
-      .item
-        img.img-responsive(src='img/slide3.jpg', alt='...')
-    // Controls
-    a.left.carousel-control(href='#carousel-jovemsenador--xs', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-      span.sr-only Previous
-    a.right.carousel-control(href='#carousel-jovemsenador--xs', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-      span.sr-only Next
