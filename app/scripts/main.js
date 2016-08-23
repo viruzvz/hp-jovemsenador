@@ -1,5 +1,5 @@
 ;!function () {
-
+  $('[data-toggle="popover"]').popover();
   var pops =   $(".mapa-svg").popover({
     'container': 'body',
     'placement': 'top',

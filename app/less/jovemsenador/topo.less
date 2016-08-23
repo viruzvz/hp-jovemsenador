@@ -157,7 +157,77 @@
   float: right;
   background-color: @color-jovem-primary;
 }
-
+.btn-share {
+  background-color: #5E7BBF;
+  color: #fff;
+  padding: 5px 8px;
+  cursor: pointer;
+  span {
+    line-height: 2.9;
+  }
+  svg {
+      margin-left: -5px;
+    }
+  &:hover {
+    color: orange;
+    text-decoration: none;
+    svg {
+      path {
+        fill: orange;
+      }
+    }
+  }
+}
+.btn-share--right {
+  right: 0;
+}
+.btn-share--dropdown-link {
+  background-color: #5e7bbf;
+  padding: 0 !important;
+  color: #fff !important;
+  border-bottom: 1px solid #fff;
+    &:hover {
+      background-color: orange !important;
+      .facebook {
+        fill:#5e7bbf;
+      }
+      .twitter {
+        fill:#61cef5;
+      }
+      .instagram {
+        fill:purple;
+      }
+      .youtube {
+        fill:red;
+      }
+    }
+  .control-icon {
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    margin-right: 2px;
+  }
+  .control-text {
+    padding: 3px;
+  }
+}
+.btn-share--dropdown {
+  padding: 0;
+  top:42px;
+  &:before {
+    z-index: -999;
+    display: inline-block !important;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background-color: #5e7bbf;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    transform: rotate(45deg);
+  }
+}
 ///////////////////////// Media queries
 @media (max-width: @screen-md-max) {
   .nav-jovemsenador {
@@ -209,7 +279,7 @@
     display: none;
   }
   .box-search {
-    width: 242px;
+    width: 85%;
     input {
       width: 75%;
     }
