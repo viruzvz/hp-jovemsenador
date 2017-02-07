@@ -19,7 +19,7 @@
 
 * `npm install` (na pasta do projeto, instala as dependências do package.json) 
 * `grunt dev` (executa o servidor na porta http://localhost:8000/)
-* Edite o projeto a através da pasta `src` os arquivos estão no formato `*.jade` e `*.less`
+* Edite o projeto a através da pasta `app` os arquivos estão no formato `*.jade` e `*.less`
 * Jade retornará uma string de HTML renderizada com seus dados. Mais informações https://pugjs.org
 * Less é um pré-processador CSS. Mais informações http://lesscss.org/ 
 * End http://www12.senado.leg.br/jovemsenador (2016/2017)
