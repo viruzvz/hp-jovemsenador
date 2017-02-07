@@ -1,6 +1,6 @@
 # Descrição
 
-* Layout desenvolvido pelo `Núcleo de Tecnologia da Informação NTI - SECOM`.
+* Layout desenvolvido pelo `Núcleo de Tecnologia da Informação NTI - SECOM`, SENADO FEDERAL.
 * O novo layout tem como destaque sua nova identidade visual, com uma área de trabalho mais ampla, limpa e organizada. O layout é responsivo e acessível, podendo ser acessado por todas as plataformas.
 
 # Desenvolvedores
@@ -22,3 +22,4 @@
 * Edite o projeto a através da pasta `src` os arquivos estão no formato `*.jade` e `*.less`
 * Jade retornará uma string de HTML renderizada com seus dados. Mais informações https://pugjs.org
 * Less é um pré-processador CSS. Mais informações http://lesscss.org/ 
+* End http://www12.senado.leg.br/jovemsenador (2016/2017)
