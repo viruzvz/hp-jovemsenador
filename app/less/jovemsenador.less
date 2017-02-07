@@ -1,0 +1,250 @@
+///////////////////// Variáveis de cores
+@color-jovem-secondary:#1d336a;
+@color-jovem-secondary--light:#244085;
+@color-jovem-primary:orange;
+@color-jovem-default:#666;
+@color-jovem-primary--light:#fff5eb;
+@color-jovem-video: #880000;
+
+
+
+///////////////////// headers
+.header1-jovemsenador{
+  font-size:20px;
+  display: inline-block;
+  color:@color-jovem-secondary; 
+  padding-top: 10px;
+  padding-left: 150px;
+  margin: 0;
+  font-style: italic;
+  text-shadow:#fff 1px -1px, #fff -1px 1px, #fff 1px 1px, #fff -1px -1px;
+}
+.header2-jovemsenador {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.5;
+  font-family: 'Lucida Bright';
+  color:@color-jovem-default;
+  margin: 0;
+}
+
+///////////////////// topo
+.topo {
+  background-image:url('../img/bg_orange.gif');
+  height: 45px;
+}
+.nav-jovemsenador--fix {
+  float: right;
+}
+.nav-jovemsenador{
+  border:none;
+  margin-bottom: 0px;
+  .navbar-header{
+    position: relative;
+    padding-left: 165px;
+    .navbar-brand {
+      padding: 0;
+      font-size: 36px;
+      line-height: 67px;
+      height: auto;
+      color: @color-jovem-secondary;
+      float: left;
+      &:after {
+        content: "|";
+        position: absolute;
+        right: -25px;
+        top: -3px;
+        font-size: 28px;
+      }
+    }
+  }
+  .navbar-nav {
+    float: right;
+    margin-right: -15px;
+    margin-left: -15px;
+      > li > a {
+        color:@color-jovem-default; 
+        line-height: 67px;
+        padding-top: 0;
+        padding-bottom: 0;
+        &:hover, &:focus{
+          background-color: @color-jovem-primary--light;
+          color:#000;
+          box-shadow: 0 -2px 0 0 @color-jovem-primary inset;
+        }
+      }
+  }
+  .dropdown-menu {
+    background-color: @color-jovem-secondary;
+    border-bottom: 5px solid @color-jovem-primary;
+    li > a {
+      color:#fff;
+      &:hover{
+        color:@color-jovem-primary;
+        background-color: @color-jovem-secondary--light;
+      }
+    }
+  }
+}
+.topo-controle {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 2px;
+  z-index: 999;
+}
+.box-search {
+  background-color: @color-jovem-secondary;
+  position: relative;
+  height: 45px;
+  width: 334px;
+  margin-right: 23px;
+  float: right;
+  input {
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    color:#fff;
+    width: 80%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &:after {
+    content: " ";
+    width: 24px;
+    position: absolute;
+    background-image: url('../img/bg-search-right.png');
+    right: -23px;
+    height: 45px;
+  }
+  &:before {
+    content: " ";
+    width: 24px;
+    position: absolute;
+    background-image: url('../img/bg-search-left.png');
+    left: -23px;
+    height: 45px;
+  }
+}
+.btn-search--orange {
+  height: 45px;
+  width: 48px;
+  color:#fff;
+  border: none;
+  font-size: 22px;
+  float: right;
+  background-color: @color-jovem-primary;
+}
+/////////////////// noticias
+.nav-tabs--jovem > li.active {
+  > a, > a:hover, > a:focus {
+    background-color: @color-jovem-primary--light;
+    border: none;
+  }
+}
+.tab-content--jovem {
+  height: 468px;
+  overflow-y: scroll;
+  scrollbar-track-color: red;
+  scrollbar-base: 5px;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: @color-jovem-primary;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color:#ffe9d2;
+    
+  }
+}
+.nav-tabs--jovem {
+  border-bottom: none;
+  > li{
+    margin-bottom: -2px;
+    a {
+      padding: 10px 10px;
+    }
+    a:hover{
+      background-color: @color-jovem-primary--light;
+      border: 1px solid @color-jovem-primary--light;
+    }
+  }
+}
+.box-colors {
+    border-bottom: 5px solid;
+    width: 100%;
+    > ul > li {
+      margin-bottom: 5px;
+    }
+}
+.box-colors--header {
+    border-bottom: 5px solid;
+    margin-top: 0;
+    margin-bottom: 10px;
+    span {
+      padding: 5px 10px;
+      font-size: 18px;
+      color: #fff;
+    }
+}
+
+/////////////////// carousel
+  .u-spacer--xxl {
+    margin-bottom: 30px;
+  }
+////////////////// Depoimento
+.depoimento {
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+/////////////////// tweaks
+#sfcss {
+  .\+background-primary--light {
+    background-color: @color-jovem-primary--light;
+  }
+  .\+background-jovem-primary {
+    background-color: @color-jovem-primary;
+  }
+  .\+background-jovem-default {
+    background-color: @color-jovem-default;
+  }
+  .\+background-jovem-secondary {
+    background-color: @color-jovem-secondary;
+  }
+  .\+background-jovem-video {
+    background-color: @color-jovem-video;
+  }
+
+
+  .\+border-primary--light {
+    border-color: @color-jovem-primary--light;
+  }
+  .\+border-jovem-primary {
+    border-color: @color-jovem-primary;
+  }
+  .\+border-jovem-default {
+    border-color: @color-jovem-default;
+  }
+  .\+border-jovem-secondary {
+    border-color: @color-jovem-secondary;
+  }
+  .\+border-jovem-video {
+    border-color: @color-jovem-video;
+  }
+}
+@media (min-width: 768px) {
+  .mainflex-sm { 
+    display: flex;
+    > * {
+      display: flex;
+    }
+  }
+}

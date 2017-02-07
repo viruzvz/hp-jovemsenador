@@ -1,0 +1,36 @@
+/////////////////// carousel
+.carousel-jovem {
+  ul {
+    padding-left: 0;
+  }
+}
+.ps-nextIcon, .ps-prevIcon {
+    border-color: transparent !important;
+    border-style: inherit !important;
+    border-width: inherit !important;
+    position: relative;
+    top: 1px;
+    display: inline-block !important;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    &:after {
+      content:"\e080";
+      font-size: 20px;
+    }
+}
+.ps-prevIcon {
+  &:after {
+    content: "\e079";
+  }
+}
+
+////////////////// media queries
+@media (max-width: @screen-xs-max) {
+  #carousel-jovemsenador--primary {
+    display: none;
+  }
+}
